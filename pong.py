@@ -79,8 +79,6 @@ class Ball():
         if self.rect.colliderect(player1.rect) or self.rect.colliderect(player2.rect):
             self.dx = -self.dx
         
-        
-        #if self.rect.topright
 
         if self.rect.left <= 0 or self.rect.right >= winX:
             self.check = player2 if self.rect.left <= 0 else player1
@@ -128,7 +126,6 @@ class Button:
 
             display_text('CONTROLS',  (rect_left-10, rect_top+200), 25, True)
     
-    #def controls(self):
 
 # placing 'the start to play' button
 play_btn = Button('start')
